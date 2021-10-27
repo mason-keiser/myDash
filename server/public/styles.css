@@ -52,10 +52,23 @@ body, * {
     line-height: 2rem;
     font-size: 1rem;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 20vw;
+    padding: 0px 5px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color:white;
-  }
+}
+
+.bellIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+.notif {
+    border-radius: 50%;
+    background: red;
+    height: 5px;
+    width: 5px;
+}

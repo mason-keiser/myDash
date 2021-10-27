@@ -11,6 +11,7 @@ const Nav = (props) => {
             setInput(true)
         } else {
             inpt.style.display = "none"
+            inpt.value = ""
             setInput(false)
         }
     }
@@ -24,7 +25,9 @@ const Nav = (props) => {
                 <div className="navIconCont">
                     <input className="searchInput" placeholder="enter search here" type="text" />
                     <i onClick={() => openSearch()} className="fas fa-search searchIcon"></i>
-                    <i className="fas fa-bell bellIcon"></i>
+                    <i className="fas fa-bell bellIcon">
+                        <div className="notif"></div>
+                    </i>
                 </div>
             </div>
         </div>
