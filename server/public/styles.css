@@ -1,4 +1,61 @@
 body, * {
-    font-family: 'Oswald', 'sans-serif';
-    font-weight: 900;
+    margin: 0;
 }
+
+.navCont {
+    width: 100vw;
+    height: 10vh;
+    background: #0D4080;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoCont {
+    width: 25vw;
+    height: 100%;
+    background: #002B62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: none;
+}
+
+.logo {
+    width: 10vw;
+    overflow: hidden;
+}
+
+.navIconCont {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.bellIcon, .searchIcon {
+    color: white;
+    margin: 1rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.bellIcon:hover, .searchIcon:hover {
+    opacity: 70%;
+}
+
+.searchInput {
+    display: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    line-height: 2rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:white;
+  }

@@ -1,11 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Dash from './dash'
 
 const App = () => {
     
     return (
-        <div>
-            app created
-        </div>
+        <Router>
+            <Switch>
+                <Route exact path='/' component={Dash}/>
+            </Switch>
+        </Router>  
     )
 }
 
